@@ -1,13 +1,11 @@
 #!/bin/bash
 
 sudo yum update -y
-sudo yum install -y pcre2-devel.x86_64 python gcc python3-devel tzdata curl unzip bash htop
+sudo yum install -y pcre2-devel.x86_64 python gcc python3-devel tzdata curl unzip bash htop git
 
 # LOCUST
 export LOCUST_VERSION="2.9.0"
 sudo pip3 install locust==$LOCUST_VERSION
-sudo pip3 install GitPython jwt requests urllib3==1.26.6
-sudo yum install git
 
 export PRIVATE_IP=$(hostname -I | awk '{print $1}')
 echo "PRIVATE_IP=$PRIVATE_IP" >> /etc/environment
