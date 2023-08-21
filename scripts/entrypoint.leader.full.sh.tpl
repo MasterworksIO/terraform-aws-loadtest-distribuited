@@ -16,6 +16,8 @@ sudo pip3 install bzt==$BZT_VERSION
 # LOCUST
 export LOCUST_VERSION="2.9.0"
 sudo pip3 install locust==$LOCUST_VERSION
+sudo pip3 install GitPython jwt requests urllib3==1.26.6
+sudo yum install git
 
 # JMETER
 export MIRROR_HOST=https://archive.apache.org/dist/jmeter
