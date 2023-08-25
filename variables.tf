@@ -156,7 +156,7 @@ variable "ssh_export_pem" {
 variable "auto_setup" {
   description = "Install and configure instances Amazon Linux2 with JMeter and Taurus"
   type        = bool
-  default     = false
+  default     = true
 }
 
 variable "auto_execute" {
